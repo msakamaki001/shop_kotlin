@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">shop</string>
+    <string name="mail_message">メールアドレス</string>
+    <string name="password_message">パスワード</string>
+    <string name="button_send">ログイン</string>
+    <string name="mail_empty">メールアドレスを入力してください</string>
+    <string name="password_empty">パスワードを入力してください</string>
+    <string name="fail_login">アドレスかパスワードが違います</string>
+    <string name="scrollview">scrollView</string>
+</resources>
