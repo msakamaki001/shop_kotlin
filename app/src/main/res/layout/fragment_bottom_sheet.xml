@@ -11,10 +11,19 @@
         android:layout_width="133dp"
         android:layout_height="31dp"
         android:layout_gravity="center"
-        android:text="カート"
+        android:text="@string/cart_title"
         android:textAlignment="center"
         android:textSize="20sp"
         android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="133dp"
+        android:layout_height="31dp"
+        android:layout_gravity="center"
+        android:text="@string/remove_method"
+        android:textAlignment="center"
+        android:textColor="@color/design_default_color_error"
+        android:textSize="15sp" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -24,7 +33,7 @@
             android:id="@+id/cancelButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="キャンセル"
+            android:text="@string/cancel"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/buyButton"
             app:layout_constraintStart_toStartOf="parent"
@@ -34,7 +43,7 @@
             android:id="@+id/buyButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="購入"
+            android:text="@string/buy"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.773"

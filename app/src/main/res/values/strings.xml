@@ -7,4 +7,9 @@
     <string name="password_empty">パスワードを入力してください</string>
     <string name="fail_login">アドレスかパスワードが違います</string>
     <string name="scrollview">scrollView</string>
+    <string name="cart_title">カート</string>
+    <string name="cancel">キャンセル</string>
+    <string name="buy">購入</string>
+    <string name="show_cart">カートを見る</string>
+    <string name="remove_method">スワイプで削除</string>
 </resources>
