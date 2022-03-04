@@ -20,6 +20,7 @@ import com.example.shop_kotlin.api.APIService
 import com.example.shop_kotlin.model.Category
 import com.example.shop_kotlin.model.Item
 import com.example.shop_kotlin.model.ItemsData
+import com.example.shop_kotlin.setting.Setting
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.google.android.material.snackbar.Snackbar
 import com.squareup.moshi.Moshi
@@ -81,7 +82,7 @@ class ButtomSheetFragment(): BottomSheetDialogFragment() {
             .build()
 
         val retrofit = Retrofit.Builder()
-            .baseUrl("http://10.0.2.2/api/")
+            .baseUrl(Setting.BASE_URL.url+"/api/")
             .addConverterFactory(MoshiConverterFactory.create(moshi))
             .build()
         thread {
