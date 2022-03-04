@@ -9,6 +9,7 @@ import android.widget.TextView
 import com.example.shop_kotlin.api.APIService
 import com.example.shop_kotlin.model.Customer
 import com.example.shop_kotlin.model.LoginData
+import com.example.shop_kotlin.setting.Setting
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import retrofit2.Call
@@ -30,7 +31,7 @@ class LoginActivity : AppCompatActivity() {
             .build()
 
         val retrofit = Retrofit.Builder()
-            .baseUrl("http://10.0.2.2/api/")
+            .baseUrl(Setting.BASE_URL.url+"/api/")
             .addConverterFactory(MoshiConverterFactory.create(moshi))
             .build()
         try {

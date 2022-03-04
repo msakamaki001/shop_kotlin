@@ -31,6 +31,7 @@ import retrofit2.converter.moshi.MoshiConverterFactory
 import kotlin.concurrent.thread
 import android.view.MotionEvent
 import androidx.recyclerview.widget.RecyclerView.OnItemTouchListener
+import com.example.shop_kotlin.setting.Setting
 
 
 class ShopActivity : AppCompatActivity() {
@@ -159,7 +160,7 @@ class ShopActivity : AppCompatActivity() {
             .build()
 
         val retrofit = Retrofit.Builder()
-            .baseUrl("http://10.0.2.2/api/")
+            .baseUrl(Setting.BASE_URL.url+"/api/")
             .addConverterFactory(MoshiConverterFactory.create(moshi))
             .build()
 
@@ -197,7 +198,7 @@ class ShopActivity : AppCompatActivity() {
             .build()
 
         val retrofit = Retrofit.Builder()
-            .baseUrl("http://10.0.2.2/api/")
+            .baseUrl(Setting.BASE_URL.url+"/api/")
             .addConverterFactory(MoshiConverterFactory.create(moshi))
             .build()
         thread {
@@ -234,7 +235,7 @@ class ShopActivity : AppCompatActivity() {
             .build()
 
         val retrofit = Retrofit.Builder()
-            .baseUrl("http://10.0.2.2/api/")
+            .baseUrl(Setting.BASE_URL.url+"/api/")
             .addConverterFactory(MoshiConverterFactory.create(moshi))
             .build()
         thread {
